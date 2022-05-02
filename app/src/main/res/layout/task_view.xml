@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/task_view_background">
+
+        <TextView
+            android:id="@+id/task_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito"
+            android:text="Task"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="task_title"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/Task"
+            app:layout_constraintStart_toStartOf="@id/task_discription"
+            app:layout_constraintTop_toTopOf="@id/Task"
+
+            />
+
+        <TextView
+            android:id="@+id/Discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="Discription"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/task_title" />
+
+        <TextView
+            android:id="@+id/task_discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="18 character ..."
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/Discription"
+            app:layout_constraintStart_toEndOf="@id/Discription"
+            app:layout_constraintTop_toTopOf="@id/Discription" />
+
+
+        <TextView
+            android:id="@+id/due_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="Due  --/--/----"
+            android:textColor="@color/purple_500"
+            app:layout_constraintBottom_toBottomOf="@id/Discription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Task" />
+
+        <TextView
+            android:id="@+id/Priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            app:layout_constraintTop_toBottomOf="@id/Discription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            app:layout_constraintStart_toStartOf="@id/Discription"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/Priority_status__"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/task_discription"
+            app:layout_constraintTop_toTopOf="@id/Priority"
+            app:layout_constraintBottom_toBottomOf="@id/Priority"
+            android:text="Low"
+            android:textColor="@color/white"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/Edit_btn_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:layout_constraintTop_toBottomOf="@id/due_status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="50dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

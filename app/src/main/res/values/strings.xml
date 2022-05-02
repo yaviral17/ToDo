@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="todo_list">TODO LIST</string>
+    <string name="todo">TODO</string>
+    <string name="title">Title</string>
+    <string name="add_task">Add Task</string>
+    <string name="discription">Discription</string>
+    <string name="title_here">title here</string>
+    <string name="discription_here">discription here</string>
+    <string name="due_time">Due Time</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="priority">Priority</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="slider_desc">slider_desc</string>
+    <string name="priority_status">priority status</string>
+    <string name="dd_mm_yyyy">dd-mm-yyyy</string>
+    <string name="hh_mm">hh : mm</string>
+</resources>
